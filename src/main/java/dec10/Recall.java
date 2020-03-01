@@ -154,6 +154,20 @@ public class Recall {
 		test.fail("");
 		extent.flush();
 		
+		
+		
+		ExtentHtmlReporter html1 = new ExtentHtmlReporter("");
+		html1.setAppendExisting(true);
+		ExtentReports extent1 = new ExtentReports();
+		extent1.attachReporter(html1);
+		
+		ExtentTest test2 = extent1.createTest("testCaseName","TestDesc");
+		test2.pass("");
+		test2.fail("");
+		test2.assignAuthor("");
+		test2.assignCategory("");
+		
+		
 				
 	}
 

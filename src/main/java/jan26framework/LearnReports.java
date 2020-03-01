@@ -4,7 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class LearnReports {
+public abstract class LearnReports {
 	
 	public static ExtentReports extent ;
 	public static ExtentTest test,testData;
