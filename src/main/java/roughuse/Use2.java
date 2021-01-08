@@ -158,7 +158,7 @@ public class Use2 {
 //				data=cell.getStringCellValue();
 				data[i-1][j]=cell.getStringCellValue();
 				System.out.println(Arrays.toString(data));
-			}}
+			}}   
 
 		String text1 ="I Love India";
 		String text2 ="More";
