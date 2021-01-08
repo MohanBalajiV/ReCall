@@ -38,11 +38,11 @@ public class Class2 {
 		int cellcount = sheet.getRow(0).getLastCellNum();
 		System.out.println(cellcount);
 		String [][] data = new String [rowcount][cellcount];
-		for(int i=1;i<=rowcount;i++) {
+		for(int i=0;i<=rowcount;i++) {
 			XSSFRow row= sheet.getRow(i);
-			for(int j=0;j<cellcount;j++) {
+			for(int j=1;j<cellcount;j++) {
 				XSSFCell cell= row.getCell(j);
-				data[i-1][j] = cell.getStringCellValue();
+				data[i][j-1] = cell.getStringCellValue();
 				System.out.println(data);
 			}
 		
