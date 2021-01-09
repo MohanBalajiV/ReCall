@@ -163,6 +163,9 @@ public class Use2 {
 		String text1 ="I Love India";
 		String text2 ="More";
 		
+		
+		
+		
 		//String to Char array
 		char[] ch = text1.toCharArray();
 		System.out.println(text1);
@@ -280,6 +283,11 @@ public class Use2 {
 //				break;
 //				}
 //			}
+		//fibonancci series
+		
+		
+		
+		
 		}
 		
 		
