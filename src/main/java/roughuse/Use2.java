@@ -283,7 +283,20 @@ public class Use2 {
 //				break;
 //				}
 //			}
-		//fibonancci series
+		//fibonancci series using loop
+		int max=10;
+		int previous=0;
+		int next=1;
+		
+		System.out.println("The fibonancci series of"+max+"numbers : ");
+		
+		for(int i=0;i<=max;i++) {
+			System.out.println(previous+"");
+			int sum=previous+next;
+			previous=next;
+			next=sum;
+			
+		}
 		
 		
 		
