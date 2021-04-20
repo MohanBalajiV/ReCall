@@ -3,11 +3,13 @@ package dec10;
 import java.io.File;
 
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import javax.xml.bind.ParseConversionEvent;
 import org.apache.commons.io.FileUtils;
@@ -22,7 +24,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -30,6 +35,15 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class Prep2019 {
+	
+	 	
+//	public int m1() {
+//		return 0;
+//	}
+//	public long m1() {
+//		return 1;
+//		
+//	}
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -37,6 +51,15 @@ public class Prep2019 {
 		//initiate browser
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
+		
+		Prep2019 os=new Prep2019();
+//		System.out.print(os.m1);
+		
+		driver.get("");
+		char[] ch={'1','2','3','2','5','4','6','3'};
+		
+		
+		
 		
 		//locators
 		driver.findElementById("Idvalue");
@@ -77,6 +100,11 @@ public class Prep2019 {
 		driver.findElementByXPath("//input[contains(text(),'asdf')]/following-sibling::a");
 		driver.findElementByXPath("(//input[contains(text(),'asdfasdf')]/preceeding::a)[2]");
 		
+		
+		WebDriverWait wait= new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.elementToBeClickable(ele1));
+		
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
 		//dropdown if it is in select tag
 		WebElement dp = driver.findElementById("");

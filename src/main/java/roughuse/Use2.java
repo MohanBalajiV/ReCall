@@ -1,6 +1,7 @@
 package roughuse;
 
 import java.io.FileInputStream;
+
 import java.io.IOException;
 import java.security.cert.PKIXRevocationChecker.Option;
 import java.util.ArrayList;
@@ -235,6 +236,17 @@ public class Use2 {
 			System.out.println(each);
 		}
 		
+		//to find first non-repeating character in a string
+		System.out.println("asdfsdaf");
+		String sa="java";
+		for(char ch12:sa.toCharArray()) {
+		if(sa.indexOf(ch12) == sa.lastIndexOf(ch12)) {
+			System.out.println(ch12);
+			break;
+		}
+		}
+	
+		
 		//to reverse a string
 		StringBuilder z= new StringBuilder();
 		StringBuilder append = z.append(text1);
@@ -297,6 +309,9 @@ public class Use2 {
 			next=sum;
 			
 		}
+		
+		
+		
 		
 //		package utils;
 //
@@ -385,5 +400,6 @@ public class Use2 {
 		
 		
 	}
+
 
 
