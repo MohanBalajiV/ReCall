@@ -236,6 +236,11 @@ public class Use2 {
 			System.out.println(each);
 		}
 		
+		//print first word in a string
+		String text3="Welcome to chennai";
+		String[] a1=text3.split(" ");
+		System.out.println(a1[0]);
+		
 		//to find first non-repeating character in a string
 		System.out.println("asdfsdaf");
 		String sa="java";
@@ -295,6 +300,7 @@ public class Use2 {
 //				break;
 //				}
 //			}
+		
 		//fibonancci series using loop
 		int max=10;
 		int previous=0;
